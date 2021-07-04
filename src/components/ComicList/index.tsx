@@ -50,7 +50,7 @@ const ComicList: React.FC<ComicListProps> = ({characterId}) => {
           `/comics?orderBy=-focDate${characterQuery}`,
         );
 
-        setComics(state => [...state, ...response.data.results]);
+        setComics(response.data.results);
       } catch (error) {
         setModal({
           open: true,
@@ -66,7 +66,7 @@ const ComicList: React.FC<ComicListProps> = ({characterId}) => {
   }, [characterId, setLoading, setModal]);
 
   return (
-    <Container>
+    <Container testID="comic-container">
       <FlatList
         testID="comic-list"
         keyExtractor={(item, index) => `${item.id}-${index}`}

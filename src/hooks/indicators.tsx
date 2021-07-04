@@ -31,10 +31,6 @@ const IndicatorsProvider: React.FC = ({children}) => {
 function useIndicators(): IndicatorsContextData {
   const context = useContext(IndicatorsContext);
 
-  if (!context) {
-    throw new Error('useIndicators must be used within an IndicatorsProvider');
-  }
-
   return context;
 }
 

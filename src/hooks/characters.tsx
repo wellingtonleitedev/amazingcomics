@@ -63,10 +63,6 @@ const CharactersProvider: React.FC = ({children}) => {
 function useCharacters(): CharactersContextData {
   const context = useContext(CharactersContext);
 
-  if (!context) {
-    throw new Error('useCharacters must be used within an CharactersProvider');
-  }
-
   return context;
 }
 
