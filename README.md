@@ -6,7 +6,7 @@
 <h4 align="center">
   An application to find comics of your favorite hero from Marvel
 </h4>
-<p align="center">
+<!-- <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/wellingtonleitedev/amazingcomics.svg">
 
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/wellingtonleitedev/amazingcomics.svg">
@@ -22,7 +22,7 @@
   </a>
 
   <img alt="GitHub" src="https://img.shields.io/github/license/wellingtonleitedev/amazingcomics.svg">
-</p>
+</p> -->
 
 <p align="center">
   <a href="#hammer_and_wrench-technologies">
@@ -36,16 +36,22 @@
   </a>
 </p>
 
-<!--<h1 align="center">
-  <img align="center" width="100%" src="https://github.com/wellingtonleitedev/amazingcomics/blob/master/src/assets/dashboard.png" alt="Screens Demo"/>
-</h1>-->
+<table cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">
+      <img align="center" width="50%" style="display="inline-block" src="https://user-images.githubusercontent.com/42186618/124399546-7a7ada00-dcf2-11eb-94d0-423d2a16fc4a.png" alt="Screens Demo"/></td>
+    <td align="center">
+      <img align="center" width="50%" style="display="inline-block" src="https://user-images.githubusercontent.com/42186618/124399577-95e5e500-dcf2-11eb-9750-65f2764afdce.jpg" alt="Screens Demo"/>
+    </td>
+  </tr>
+</table>
 
-<!--<h3 align="center">Video Demo on Loom.</h3>
+<h3 align="center">Video Demo on Loom.</h3>
 <p align="center">
-  <a href="https://www.loom.com/share/59246947e438438cafdf10740a3feda9">
+  <a href="https://www.loom.com/share/8168d5bda16641be85ab9314021661f8?sharedAppSource=personal_library">
     <img width="15%" src="https://i.pinimg.com/originals/51/c5/2c/51c52cb5156376f013275fa1f5753b7c.png" />
   </a>
-</p>-->
+</p>
 
 ## :hammer_and_wrench: Technologies
 
