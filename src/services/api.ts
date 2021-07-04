@@ -1,11 +1,19 @@
 import axios from 'axios';
+import md5 from 'md5';
 
-export default axios.create({
-  baseURL:
-    'https://gateway.marvel.com/v1/public/comics?ts=1&apikey=4a0b76c8f145b5143eb462b2cb5d3b6c&hash=ad0f96ad0bcac3e506649ce7b0756a84',
-  // params: {
-  //   ts: Number(new Date()),
-  //   apiKey: '4a0b76c8f145b5143eb462b2cb5d3b6c',
-  //   hash: 'ad0f96ad0bcac3e506649ce7b0756a84',
-  // }
+const ts = Number(new Date());
+const privateKey = 'a7a210d13924557b78df31d899d1934b184130af';
+const publicKey = '4a0b76c8f145b5143eb462b2cb5d3b6c';
+
+const hash = md5(`${ts}${privateKey}${publicKey}`);
+
+const api = axios.create({
+  baseURL: 'https://gateway.marvel.com/v1/public',
+  params: {
+    ts: ts,
+    apikey: publicKey,
+    hash,
+  },
 });
+
+export default api;
